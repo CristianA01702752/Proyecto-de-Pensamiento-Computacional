@@ -1,3 +1,11 @@
+// Proyecto avance 1
+//Cristian Rogelio Espinosa Díaz 
+//A01702752
+
+#include <iostream>
+using namespace std;
+#include "caracteristicas.h";
+
 int main(){
     cout<<"Ingresa el nombre del campeón:"<<endl;
     cout<<"Malphite"<<endl;
