@@ -12,41 +12,31 @@ class itemizacion{
 		string ofensivos;
 		
 	public:
-		itemizacion(): botas(""), defensivos(""), ofensivos(""){};
-		itemizacion(string bot, string def, string ofe): botas(bot), defensivos(def), ofensivos(ofe){};
-		string get_botas();
-		string get_defensivos();
-		string get_ofensivos();
+		itemizacion(string, string, string);
 		
-		void set_botas(string);
-		void set_defensivos(string);
-		void set_ofensivos(string);
+		void set_botas();
+		void set_defensivos();
+		void set_ofensivos();
 	
 };
 
-
-string itemizacion::get_botas(){
-	return botas;
+itemizacion:: itemizacion(string bot, string def, string ofe){
+    botas=bot;
+    defensivos=def;
+    ofensivos=ofe;
 }
 
-string itemizacion::get_defensivos(){
-	return defensivos;
+
+void itemizacion::set_botas(){
+  cout<<"Las botas más utilizadas con Malphite son: "<<botas<<endl;
 }
 
-string itemizacion::get_ofensivos(){
-	return ofensivos;
+void itemizacion::set_defensivos(){
+  cout<<"El objeto defensivo más usado con Malphite es: "<<defensivos<<endl;
 }
 
-void itemizacion::set_botas(string nombre){
-	botas=nombre;
-}
-
-void itemizacion::set_defensivos(string nombre1){
-	defensivos=nombre1;
-}
-
-void itemizacion::set_ofensivos(string nombre2){
-	ofensivos=nombre2;
+void itemizacion::set_ofensivos(){
+  cout<<"El objeto ofensivo más usado con Malphite es: "<<ofensivos<<endl;
 }
 
 
@@ -56,30 +46,59 @@ class counterPicks{
 		string enemigosD;
 		
 	public:
-		counterPicks(): enemigosF(""), enemigosD(""){};
-		counterPicks(string fuertes, string debiles): enemigosF(fuertes), enemigosD(debiles){};
-		string get_enemigosF();
-		string get_enemigosD();
+		counterPicks(string, string);
 		
-		void set_enemigosF(string);
-		void set_enemigosD(string);
+		void set_enemigosF();
+		void set_enemigosD();
 	
 };
 
-
-string counterPicks::get_enemigosF(){
-	return enemigosF;
+counterPicks:: counterPicks(string fuertes, string debiles){
+    enemigosF=fuertes;
+    enemigosD=debiles;
 }
 
-string counterPicks::get_enemigosD(){
-	return enemigosD;
+void counterPicks::set_enemigosF(){
+	cout<<"Malphite es débil al enfrentarse contra: "<<enemigosF<<endl;	
+}
+
+void counterPicks::set_enemigosD(){
+  cout<<"Malphite es fuerte al enfrentarse contra: "<<enemigosD<<endl;
+}
+
+class runas{
+	private:
+		string runas_principales;
+		string runas_secundarias;
+		string runas_terciarias;
+		
+	public:
+		runas(string, string, string);
+		
+		void set_runasp();
+		void set_runass();
+		void set_runast();
+	
+};
+
+runas:: runas(string rp, string rs, string rt){
+    runas_principales=rp;
+    runas_secundarias=rs;
+    runas_terciarias=rt;
 }
 
 
-void counterPicks::set_enemigosF(string nombre3){
-	enemigosF=nombre3;
+void runas::set_runasp(){
+  cout<<"Las runas principales son:"<<endl;
+  cout<<runas_principales<<endl;
 }
 
-void counterPicks::set_enemigosD(string nombre4){
-	enemigosD=nombre4;
+void runas::set_runass(){
+  cout<<"Las runas secundarias son: "<<endl;
+  cout<<runas_secundarias<<endl;
+}
+
+void runas::set_runast(){
+  cout<<"El objeto ofensivo más usado con Malphite es: "<<endl;
+  cout<<runas_terciarias<<endl;
 }
