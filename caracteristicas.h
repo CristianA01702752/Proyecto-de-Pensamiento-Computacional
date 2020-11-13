@@ -23,11 +23,7 @@ class itemizacion{
 };
 
 // se crea un constructor para que los datos que se asignen a las partes correspondientes que se asignaran a cada campeón
-itemizacion:: itemizacion(string bot, string def, string ofe){
-    botas=bot;
-    defensivos=def;
-    ofensivos=ofe;
-}
+itemizacion:: itemizacion(string bot, string def, string ofe): botas(bot), defensivos(def), ofensivos(ofe){};
 
 // se crea la instrucción para que el programa imprima el mensaje con los datos correspondientes
 void itemizacion::set_botas(){
@@ -57,10 +53,8 @@ class counterPicks{
 	
 };
 // se crea un constructor para que los datos que se asignen a las partes correspondientes que se asignaran a cada campeon
-counterPicks:: counterPicks(string fuertes, string debiles){
-    enemigosF=fuertes;
-    enemigosD=debiles;
-}
+counterPicks:: counterPicks(string fuertes, string debiles): enemigosF(fuertes), enemigosD(debiles){};
+
 // se crea la instrucción para que el programa imprima el mensaje con los datos correspondientes
 void counterPicks::set_enemigosF(){
 	cout<<"Malphite es débil al enfrentarse contra: "<<enemigosF<<endl;	
@@ -86,11 +80,7 @@ class runas{
 	
 };
 // se crea un constructor para que los datos que se asignen a las partes correspondientes que se asignaran a cada campeon
-runas:: runas(string rp, string rs, string rt){
-    runas_principales=rp;
-    runas_secundarias=rs;
-    runas_terciarias=rt;
-}
+runas:: runas(string rp, string rs, string rt): runas_principales(rp), runas_secundarias(rs), runas_terciarias(rt){};
 
 // se crea la instrucción para que el programa imprima el mensaje con los datos correspondientes
 void runas::set_runasp(){
