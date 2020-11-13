@@ -33,13 +33,21 @@ int main(){
     
         if (eleccion==1){
           malphite.set_botas();
+          cout<<""<<endl;
           malphite.set_defensivos();
+          cout<<""<<endl;
           malphite.set_ofensivos();
+          cout<<""<<endl;
           malphite1.set_enemigosF();
+          cout<<""<<endl;
           malphite1.set_enemigosD();
+          cout<<""<<endl;
           malphite2.set_runasp();
+          cout<<""<<endl;
           malphite2.set_runass();
+          cout<<""<<endl;
           malphite2.set_runast();
+          cout<<""<<endl;
         }
         else if (eleccion==2){
           cout<<"Adiós, invocador"<<endl;
