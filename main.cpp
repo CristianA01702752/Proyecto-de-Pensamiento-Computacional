@@ -20,9 +20,9 @@ int main(){
     cout<<"Ingresa el nombre del campeón:"<<endl;
     cout<<"Malphite"<<endl;
 	
-	  itemizacion malphite= itemizacion("Botas de Mercurio", "Corazón de Hielo", "Hidra Titánica");
+    itemizacion malphite= itemizacion("Botas de Mercurio", "Corazón de Hielo", "Hidra Titánica");
 
-		counterPicks malphite1= counterPicks("Garen e Illaoi", "Shen y Mordekaiser");
+    counterPicks malphite1= counterPicks("Garen e Illaoi", "Shen y Mordekaiser");
 
     runas malphite2= runas("Cometa arcano, Banda de Maná, Trascendencia y Pirolasér","Entrega de galletas y Tónico de distorsión temporal", "2 puntos ofensivos y 1 punto en armadura");
     
