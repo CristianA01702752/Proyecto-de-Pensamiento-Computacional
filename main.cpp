@@ -59,7 +59,7 @@ runas malphite2= runas("Cometa arcano, Banda de Maná, Trascendencia y Pirolasé
           cout<<malphite2.get_runast()<<endl;
           cout<<""<<endl;
         }
-        else if (eleccion=="Adios"||eleccion=="adios"){
+        else if (eleccion=="Salir"||eleccion=="salir"){
           cout<<"Adiós, invocador"<<endl;
           exit(-1);
       }
