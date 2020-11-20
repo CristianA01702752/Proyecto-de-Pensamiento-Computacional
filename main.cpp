@@ -13,12 +13,12 @@ void menu (){
 }
 
 int main(){
-  
-itemizacion malphite= itemizacion("Botas de Mercurio", "Corazón de Hielo", "Hidra Titánica");
 
-counterPicks malphite1= counterPicks("Garen e Illaoi", "Shen y Mordekaiser");
+	  itemizacion malphite= itemizacion("Botas de Mercurio", "Corazón de Hielo", "Hidra Titánica");
 
-runas malphite2= runas("Cometa arcano, Banda de Maná, Trascendencia y Pirolasér","Entrega de galletas y Tónico de distorsión temporal", "2 puntos ofensivos y 1 punto en armadura");
+		counterPicks malphite1= counterPicks("Garen e Illaoi", "Shen y Mordekaiser");
+
+    runas_s malphite3= runas_s("Cometa arcano", "Banda de Maná", "Trascendencia", "Pirolasér","Entrega de galleta","Tónico de distorsión temporal");
     
 
     
@@ -48,20 +48,38 @@ runas malphite2= runas("Cometa arcano, Banda de Maná, Trascendencia y Pirolasé
           cout<<""<<endl;
           
           cout<<"Las runas principales son:"<<endl;
-          cout<<malphite2.get_runasp()<<endl;
+          cout<<""<<endl;
+
+          cout<<malphite3.get_runa1()<<endl;
           cout<<""<<endl;
           
-          cout<<"Las runas secundarias son: "<<endl;
-          cout<<malphite2.get_runass()<<endl;
+          cout<<malphite3.get_runa2()<<endl;
           cout<<""<<endl;
           
-          cout<<"Las runas terciarias son: "<<endl;
-          cout<<malphite2.get_runast()<<endl;
+          cout<<malphite3.get_runa3()<<endl;
+          cout<<""<<endl;
+
+          cout<<malphite3.get_runa4()<<endl;
+          cout<<""<<endl;
+
+          cout<<"Las runas secundarias son:"<<endl;
+          cout<<""<<endl;
+
+          cout<<malphite3.get_runas1()<<endl;
+          cout<<""<<endl;
+
+          cout<<malphite3.get_runas2()<<endl;
           cout<<""<<endl;
         }
         else if (eleccion=="Salir"||eleccion=="salir"){
           cout<<"Adiós, invocador"<<endl;
           exit(-1);
+        
+        }
+        else {
+          cout<<"Lo sentimos invocador pero ese personaje no existe o no ha sido registrado a la base de datos"<<endl;
+          cout<<""<<endl;
+          cout<<"Intenta otra vez"<<endl;
       }
     }
   }
