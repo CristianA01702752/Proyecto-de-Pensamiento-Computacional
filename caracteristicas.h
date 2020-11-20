@@ -14,9 +14,9 @@ class itemizacion{
 	public:
 		itemizacion(string bot, string def, string ofe): botas(bot), defensivos(def), ofensivos(ofe){};
 		
-		void set_botas(string);
-		void set_defensivos(string);
-		void set_ofensivos(string);
+		void items_botas(string);
+		void items_defensivos(string);
+		void items_ofensivos(string);
 
     string get_botas();
     string get_defensivos();
@@ -35,15 +35,15 @@ string itemizacion::get_defensivos(){
 string itemizacion::get_ofensivos(){
   return ofensivos;
 }
-void itemizacion::set_botas(string bot){
+void itemizacion::items_botas(string bot){
   botas=bot;
 }
 
-void itemizacion::set_defensivos(string def){
+void itemizacion::items_defensivos(string def){
   defensivos=def;
 }
 
-void itemizacion::set_ofensivos(string ofe){
+void itemizacion::items_ofensivos(string ofe){
   ofensivos=ofe;
 }
 
@@ -56,8 +56,8 @@ class counterPicks{
 	public:
 		counterPicks(string fuertes, string debiles): enemigosF(fuertes), enemigosD(debiles){};
 		
-		void set_enemigosF(string);
-		void set_enemigosD(string);
+		void s_enemigosF(string);
+		void s_enemigosD(string);
 
     string get_enemigosF();
     string get_enemigosD();
@@ -72,53 +72,129 @@ string counterPicks::get_enemigosD(){
   return enemigosD;
 }
 
-void counterPicks::set_enemigosF(string fuertes){
+void counterPicks::s_enemigosF(string fuertes){
 	enemigosF=fuertes;	
 }
 
-void counterPicks::set_enemigosD(string debiles){
+void counterPicks::s_enemigosD(string debiles){
   enemigosD=debiles;
 }
 
-class runas{
-	private:
-		string runas_principales;
-		string runas_secundarias;
-		string runas_terciarias;
-		
-	public:
-		runas(string rp, string rs, string rt): runas_principales(rp), runas_secundarias(rs), runas_terciarias(rt){};
-		
-		void set_runasp(string);
-		void set_runass(string);
-		void set_runast(string);
+class runas_p{
+	protected:
+		string runa_1;
+		string runa_2;
+		string runa_3;
+		string runa_4;
 
-    string get_runasp();
-    string get_runass();
-    string get_runast();
-	
+	public:
+    runas_p();
+		runas_p(string runa_1, string runa_2, string runa_3,string runa_4);
+		
+		void s_runa1(string);
+		void s_runa2(string);
+		void s_runa3(string);
+    void s_runa4(string);
+
+    string get_runa1();
+    string get_runa2();
+    string get_runa3();
+    string get_runa4();
+
 };
 
-string runas:: get_runasp(){
-  return runas_principales;
+runas_p::runas_p(){
+  runa_1="";
+  runa_2="";
+  runa_3="";
+  runa_4="";  
 }
 
-string runas:: get_runass(){
-  return runas_secundarias;
+runas_p::runas_p(string r1, string r2, string r3, string r4){
+  runa_1=r1;
+  runa_2=r2;
+  runa_3=r3;
+  runa_4=r4;
 }
 
-string runas:: get_runast(){
-  return runas_terciarias;
+string runas_p:: get_runa1(){
+  return runa_1;
 }
 
-void runas::set_runasp(string rp){
-  runas_principales=rp;
+string runas_p:: get_runa2(){
+  return runa_2;
 }
 
-void runas::set_runass(string rs){
-  runas_secundarias=rs;
+string runas_p:: get_runa3(){
+  return runa_3;
 }
 
-void runas::set_runast(string rt){
-  runas_terciarias=rt;
+string runas_p:: get_runa4(){
+  return runa_4;
 }
+
+void runas_p:: s_runa1(string r1){
+  runa_1=r1;
+}
+
+void runas_p:: s_runa2(string r2){
+  runa_2=r2;
+}
+
+void runas_p:: s_runa3(string r3){
+  runa_3=r3;
+}
+
+void runas_p:: s_runa4(string r4){
+  runa_4=r4;
+}
+
+class runas_s: public runas_p {
+  
+  private:
+    string runas_1;
+    string runas_2;
+  
+  public:
+    runas_s();
+    runas_s(string, string, string, string, string, string);
+		
+		void s_runas1(string);
+		void s_runas2(string);
+
+    string get_runas1();
+    string get_runas2();
+    
+};
+
+runas_s::runas_s(){
+  runa_1="";
+  runa_2="";
+  runa_3="";
+  runa_4="";
+}
+runas_s::runas_s(string r1, string r2, string r3,string r4, string r5, string r6){
+  runa_1=r1;
+  runa_2=r2;
+  runa_3=r3;
+  runa_4=r4;
+  runas_1=r5;
+  runas_2=r6;
+};
+
+void runas_s::s_runas1(string r5){
+  runas_1=r5;
+}
+
+void runas_s::s_runas2(string r6){
+  runas_2=r6;
+}
+
+string runas_s:: get_runas1(){
+  return runas_1;
+}
+
+string runas_s:: get_runas2(){
+  return runas_2;
+}
+
