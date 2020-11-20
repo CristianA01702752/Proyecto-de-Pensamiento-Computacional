@@ -18,9 +18,9 @@ class itemizacion{
 		void items_defensivos(string);
 		void items_ofensivos(string);
 
-    string get_botas();
-    string get_defensivos();
-    string get_ofensivos();
+    		string get_botas();
+    		string get_defensivos();
+    		string get_ofensivos();
 	
 };
 
@@ -59,8 +59,8 @@ class counterPicks{
 		void s_enemigosF(string);
 		void s_enemigosD(string);
 
-    string get_enemigosF();
-    string get_enemigosD();
+    		string get_enemigosF();
+    		string get_enemigosD();
 	
 };
 
@@ -88,18 +88,18 @@ class runas_p{
 		string runa_4;
 
 	public:
-    runas_p();
+    		runas_p();
 		runas_p(string runa_1, string runa_2, string runa_3,string runa_4);
 		
 		void s_runa1(string);
 		void s_runa2(string);
 		void s_runa3(string);
-    void s_runa4(string);
+    		void s_runa4(string);
 
-    string get_runa1();
-    string get_runa2();
-    string get_runa3();
-    string get_runa4();
+    		string get_runa1();
+    		string get_runa2();
+    		string get_runa3();
+    		string get_runa4();
 
 };
 
@@ -158,10 +158,8 @@ class runas_s: public runas_p {
   public:
     runas_s();
     runas_s(string, string, string, string, string, string);
-		
-		void s_runas1(string);
-		void s_runas2(string);
-
+    void s_runas1(string);
+    void s_runas2(string);
     string get_runas1();
     string get_runas2();
     
