@@ -1,13 +1,22 @@
+/* Proyecto avance 1
+ *Cristian Rogelio Espinosa Díaz 
+ *A01702752
+*/
+
+//Se incluye el archivo donde se encuentran las clases que definimos en "caracteristicas.h"
 #ifndef TOPLANE_H_
 #define TOPLANE_H_
 #include "caracteristicas.h"
 
+//Se define la clase toplane, la cual sera compuesta por las clases previas
 class toplane{
   protected:
+    //Se define las variables que estaran compuestas por las variables que definimos previamente
     itemizacion items[2];
     counterPicks picks[2];
     runas_s runa[2];
   public:
+   
    toplane(){};
    void agregaitems(int,string,string,string);
    void agregapicks(int, string, string);
