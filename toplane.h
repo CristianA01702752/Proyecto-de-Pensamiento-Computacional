@@ -28,11 +28,22 @@ class toplane{
    void muestra_runas();
 };
 
-
+/*
+ * setter agregaitems
+ *
+ * @param int lista, string b, string d, string o
+ * @return los objetos que conformaran la variable items
+ */
 void toplane::agregaitems(int lista,string b, string d, string o){
  items[lista]=itemizacion(b,d,o);
 }
 
+/*
+ * setter agregarunas
+ *
+ * @param int lista1, string f, string d
+ * @return los objetos que conformaran la variable items
+ */
 void toplane::agregapicks(int lista1, string f, string d){
  picks[lista1]=counterPicks(f,d);
 }
