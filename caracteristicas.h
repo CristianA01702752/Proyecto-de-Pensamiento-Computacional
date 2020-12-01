@@ -101,18 +101,30 @@ void itemizacion::items_ofensivos(string ofe){
   ofensivos=ofe;
 }
 
+/*
+ * Almacenda los valores de las variables botas, defensivos y ofensivos en una cadena de
+ * texto.
+ *
+ * @param
+ * @return string con los datos de las variables botas, defensivos y ofensivos
+ */
 string itemizacion:: to_string()const{
     stringstream aux;
     aux<<" "<<botas<<", "<<defensivos<<", "<<ofensivos;
     return aux.str();
 }
 
+// Declaración de la clase counterPicks
 class counterPicks{
 	private:
+	 // Declaro las variables de la clase
 	 string enemigosF;
 	 string enemigosD;
 		
 	public:
+	  /* Declaro los métodos que se utilizarán en la clase
+	   * Declaro tanto un constructor default como un constructor con las variables 
+	   */ 
     	 counterPicks(){};
 	 counterPicks(string fuertes, string debiles): enemigosF(fuertes), enemigosD(debiles){};
 	  
@@ -124,36 +136,72 @@ class counterPicks{
          string to_string1()const;
 };
 
+/*
+ * getter get_enemigosF
+ *
+ * @param
+ * @return string: enemigos a los que el personaje que el usuario eliga es débil en un enfrentamiento
+ */
 string counterPicks::get_enemigosF(){
   return enemigosF;
 }
 
+/*
+ * getter get_enemigosD
+ *
+ * @param
+ * @return string: enemigos a los que el personaje que el usuario es fuerte en un enfrentamiento
+ */
 string counterPicks::get_enemigosD(){
   return enemigosD;
 }
 
+/*
+ * setter s_enemigosF
+ *
+ * @param string fuertes
+ * @return variable enemigosF
+ */
 void counterPicks::s_enemigosF(string fuertes){
 	enemigosF=fuertes;	
 }
 
+/*
+ * setter s_enemigosD
+ *
+ * @param string debiles
+ * @return variable enemigosD
+ */
 void counterPicks::s_enemigosD(string debiles){
   enemigosD=debiles;
 }
 
+/*
+ * Almacenda los valores de las variables enemigosF y enemigosD en una cadena de
+ * texto.
+ *
+ * @param
+ * @return string con los datos de las variables enemigosF y enemigosD.
+ */
 string counterPicks:: to_string1()const{
     stringstream aux;
     aux<<" "<<enemigosF<<" y tu personaje es fuerte contra: "<< enemigosD <<endl;
     return aux.str();
 }
 
+// Declaración de la clase runas_p
 class runas_p{
 	protected:
+	// Declaro las variables de la clase
 	 string runa_1;
 	 string runa_2;
 	 string runa_3;
 	 string runa_4;
 
 	public:
+	 /* Declaro los métodos que se utilizarán en la clase
+	   * Declaro tanto un constructor default como un constructor con las variables 
+	   */ 
     	 runas_p();
 	 runas_p(string runa_1, string runa_2, string runa_3,string runa_4);
 		
