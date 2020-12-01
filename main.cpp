@@ -74,6 +74,8 @@ int main(){
           cout<<""<<endl;
           volibear.muestra_runas();
         }
+        
+        //Si el usuario elige a "Mordekaiser" o "mordekaiser", el programa impirmira los datos asignados a este personaje
         else if (eleccion=="Mordekaiser"||eleccion=="mordekaiser"){
           cout<<""<<endl;
           toplane mordekaiser;
@@ -86,6 +88,8 @@ int main(){
           cout<<""<<endl;
           mordekaiser.muestra_runas();
         }
+      
+        //Si el usuario elige a "Shen" o "shen", el programa impirmira los datos asignados a este personaje
         else if (eleccion=="Shen"||eleccion=="shen"){
           cout<<""<<endl;
           toplane shen;
@@ -98,6 +102,8 @@ int main(){
           cout<<""<<endl;
           shen.muestra_runas();
         }
+      
+        //Si el usuario elige a "Sion" o "sion", el programa impirmira los datos asignados a este personaje
         else if (eleccion=="Sion"||eleccion=="sion"){
           cout<<""<<endl;
           toplane sion;
@@ -110,6 +116,8 @@ int main(){
           cout<<""<<endl;
           sion.muestra_runas();
         }
+      
+        //Si el usuario elige a "Akali" o "akali", el programa impirmira los datos asignados a este personaje
         else if (eleccion=="Akali"||eleccion=="akali"){
           cout<<""<<endl;
           toplane akali;
@@ -122,6 +130,8 @@ int main(){
           cout<<""<<endl;
           akali.muestra_runas();
         }
+      
+        //Si el usuario elige a "Maokai" o "maokai", el programa impirmira los datos asignados a este personaje
         else if (eleccion=="Maokai"||eleccion=="maokai"){
           cout<<""<<endl;
           toplane maokai;
@@ -134,6 +144,8 @@ int main(){
           cout<<""<<endl;
           maokai.muestra_runas();
         }
+      
+        //Si el usuario elige a "Cho'gath" o "cho'gath", el programa impirmira los datos asignados a este personaje
         else if (eleccion=="Cho'Gath"||eleccion=="cho'gath"){
           cout<<""<<endl;
           toplane chogath;
@@ -146,6 +158,8 @@ int main(){
           cout<<""<<endl;
           chogath.muestra_runas();
         }
+      
+        //Si el usuario elige a "Kennen" o "kennen", el programa impirmira los datos asignados a este personaje
         else if (eleccion=="Kennen"||eleccion=="kennen"){
           cout<<""<<endl;
           toplane kennen;
@@ -158,6 +172,8 @@ int main(){
           cout<<""<<endl;
           kennen.muestra_runas();
         }
+      
+        //Si el usuario elige a "Nasus" o "nasus", el programa impirmira los datos asignados a este personaje
         else if (eleccion=="Nasus"||eleccion=="nasus"){
           cout<<""<<endl;
           toplane nasus;
@@ -171,11 +187,13 @@ int main(){
           nasus.muestra_runas();
         }
 
+        //Si el usuario elige a "Salir" o "salir", el programa se termina
         else if (eleccion=="Salir"||eleccion=="salir"){
           cout<<"Adiós invocador"<<endl;
           exit(-1);
         
         }
+        //Si el usuario escribe algun personaje que no se encuentre, el programa imprimira un mensaje y volvera a imprimir el menu y la entrada de texto
         else {
           cout<<"Lo sentimos invocador pero ese personaje no existe o no ha sido registrado a la base de datos"<<endl;
           cout<<""<<endl;
