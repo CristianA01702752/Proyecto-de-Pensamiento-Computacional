@@ -10,23 +10,22 @@ using namespace std;
 
 class itemizacion{
 	private:
-		string botas;
-		string defensivos;
-		string ofensivos;
+	 string botas;
+	 string defensivos;
+	 string ofensivos;
 		
 	public:
-    itemizacion(){};
-		itemizacion(string bot, string def, string ofe): botas(bot), defensivos(def), ofensivos(ofe){};
+    	 itemizacion(){};
+	 itemizacion(string bot, string def, string ofe): botas(bot), defensivos(def), ofensivos(ofe){};
 		
-		void items_botas(string);
-		void items_defensivos(string);
-		void items_ofensivos(string);
+	 void items_botas(string);
+	 void items_defensivos(string);
+	 void items_ofensivos(string);
 
-    		string get_botas();
-    		string get_defensivos();
-    		string get_ofensivos();
-        string to_string()const;
-	
+    	 string get_botas();
+    	 string get_defensivos();
+    	 string get_ofensivos();
+         string to_string()const;
 };
 
 
@@ -61,20 +60,19 @@ string itemizacion:: to_string()const{
 
 class counterPicks{
 	private:
-		string enemigosF;
-		string enemigosD;
+	 string enemigosF;
+	 string enemigosD;
 		
 	public:
-    counterPicks(){};
-		counterPicks(string fuertes, string debiles): enemigosF(fuertes), enemigosD(debiles){};
-		
-		void s_enemigosF(string);
-		void s_enemigosD(string);
+    	 counterPicks(){};
+	 counterPicks(string fuertes, string debiles): enemigosF(fuertes), enemigosD(debiles){};
+	  
+	 void s_enemigosF(string);
+	 void s_enemigosD(string);
 
-    		string get_enemigosF();
-    		string get_enemigosD();
-        string to_string1()const;
-	
+    	 string get_enemigosF();
+    	 string get_enemigosD();
+         string to_string1()const;
 };
 
 string counterPicks::get_enemigosF(){
@@ -101,25 +99,24 @@ string counterPicks:: to_string1()const{
 
 class runas_p{
 	protected:
-		string runa_1;
-		string runa_2;
-		string runa_3;
-		string runa_4;
+	 string runa_1;
+	 string runa_2;
+	 string runa_3;
+	 string runa_4;
 
 	public:
-    		runas_p();
-		runas_p(string runa_1, string runa_2, string runa_3,string runa_4);
+    	 runas_p();
+	 runas_p(string runa_1, string runa_2, string runa_3,string runa_4);
 		
-		void s_runa1(string);
-		void s_runa2(string);
-		void s_runa3(string);
-    		void s_runa4(string);
+	 void s_runa1(string);
+	 void s_runa2(string);
+	 void s_runa3(string);
+    	 void s_runa4(string);
 
-    		string get_runa1();
-    		string get_runa2();
-    		string get_runa3();
-    		string get_runa4();
-
+    	 string get_runa1();
+    	 string get_runa2();
+    	 string get_runa3();
+    	 string get_runa4();
 };
 
 runas_p::runas_p(){
