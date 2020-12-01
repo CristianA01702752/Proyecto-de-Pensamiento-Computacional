@@ -1,12 +1,17 @@
-// Proyecto avance 1
-//Cristian Rogelio Espinosa Díaz 
-//A01702752
+/* Proyecto avance 1
+ *Cristian Rogelio Espinosa Díaz 
+ *A01702752
+*/
 
+//Bibliotecas
 #include <iostream>
 using namespace std;
-#include "toplane.h"
+#include "caracteristicas.h"//Nombre del archivo donde se encuentran los objetos
+#include "toplane.h"//Nombre del archivo donde se encuentra la clase que se compone de las clases del primer archivo
 
+// Se crea una función para poder diseñar un menu con los distintos personajes disponibles
 void menu (){
+  //Imprime las opciones de personajes
   cout<<"1. Malphite"<<endl;
   cout<<"2. Volibear"<<endl;
   cout<<"3. Mordekaiser"<<endl;
@@ -23,13 +28,26 @@ void menu (){
 
 int main(){
   
+  //Ciclo while para que el sistema siga funcionando hasta que el usuario elija la opcion salir.
   bool ciclo = true;
     while (ciclo){
+      //Se imprime el menu que definimos anteriormente
       menu();
+      
+        //Se define la variable que se utilizará para que el programa imprima las distintas caracteristicas del personaje elegido por el usuario
         string eleccion;
+      
+        //Se imprime un mensaje para que el usuario ingrese el nombre del personaje
         std::cout << "Ingresa el nombre de tu campeon: ";
+        
+        //Se crea la entrada de texto para permitir la eleccion del campeon
         std::cin >> eleccion;
 
+        /*Caso de prueba utilizado para verficar que las funciones se ejecuten de manera correcta
+         *
+         *Se crea una condicion if, else if y else para poder ejecutar las distintas opciones de los campeones
+         *Si el usuario escribe "Malphite" o "malphite", imprimira los datos de este campeon
+         */
         if (eleccion=="Maplhite"||eleccion=="malphite"){
           cout<<""<<endl;
           toplane malphite;
@@ -42,6 +60,8 @@ int main(){
           cout<<""<<endl;
           malphite.muestra_runas();
         }
+      
+        //Si el usuario elige a "Volibear" o "volibear", el programa impirmira los datos asignados a este personaje
         else if (eleccion=="Volibear"||eleccion=="volibear"){
           cout<<""<<endl;
           toplane volibear;
