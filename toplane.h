@@ -1,7 +1,11 @@
 /* Proyecto avance 1
  *Cristian Rogelio Espinosa Díaz 
  *A01702752
-*/
+ */
+
+/* Este archivo utilizara las clases que definimos en "caracteristicas.h" para poder 
+ * hacer que la clase "toplane" este compuesta de las clases definidas previamente.
+ */
 
 //Se incluye el archivo donde se encuentran las clases que definimos en "caracteristicas.h"
 #ifndef TOPLANE_H_
