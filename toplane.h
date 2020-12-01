@@ -16,7 +16,9 @@ class toplane{
     counterPicks picks[2];
     runas_s runa[2];
   public:
-   
+   /* Se declara un constructor defautl y los métodos que se utilizaran
+    * en la clase "toplane"
+    */
    toplane(){};
    void agregaitems(int,string,string,string);
    void agregapicks(int, string, string);
@@ -24,8 +26,8 @@ class toplane{
    void muestra_items();
    void muestra_picks();
    void muestra_runas();
-
 };
+
 
 void toplane::agregaitems(int lista,string b, string d, string o){
  items[lista]=itemizacion(b,d,o);
