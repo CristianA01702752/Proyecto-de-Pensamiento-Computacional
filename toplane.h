@@ -58,20 +58,36 @@ void toplane::agregarunas(int lista2, string ru1, string ru2, string ru3, string
   runa[lista2]=runas_s(ru1, ru2, ru3, ru4, ru5, ru6);
 }
 
-
+/*
+ * getter muestra_items
+ *
+ * @param
+ * @return string con los datos de la variable items[i]
+ */
 void toplane::muestra_items(){
   for(int i = 1 ; i <2; i++){
       cout<<"Los items más usados son:"<<items[i].to_string()<<endl;
     }
-    
 }
 
+/*
+ * getter muestra_picks
+ *
+ * @param
+ * @return string con los datos de la variable picks[i]
+ */
 void toplane::muestra_picks(){
   for(int i = 1 ; i <2; i++){
       cout<<"Tu personaje es débil contra:"<<picks[i].to_string1()<<endl;
     }
 }
 
+/*
+ * getter muestra_runas
+ *
+ * @param
+ * @return string con los datos de la variable runas[i]
+ */
 void toplane::muestra_runas(){
   for(int i = 1 ; i <2; i++){
       cout<<"Las runas principales son: "<<runa[i].to_string2()<<endl;
