@@ -122,9 +122,9 @@ class counterPicks{
 	 string enemigosD;
 		
 	public:
-	  /* Declaro los métodos que se utilizarán en la clase
-	   * Declaro tanto un constructor default como un constructor con las variables 
-	   */ 
+	 /* Declaro los métodos que se utilizarán en la clase
+	  * Declaro tanto un constructor default como un constructor con las variables 
+	  */ 
     	 counterPicks(){};
 	 counterPicks(string fuertes, string debiles): enemigosF(fuertes), enemigosD(debiles){};
 	  
@@ -192,7 +192,7 @@ string counterPicks:: to_string1()const{
 // Declaración de la clase runas_p
 class runas_p{
 	protected:
-	// Declaro las variables de la clase
+	 // Declaro las variables de la clase
 	 string runa_1;
 	 string runa_2;
 	 string runa_3;
@@ -216,6 +216,12 @@ class runas_p{
     	 string get_runa4();
 };
 
+/*
+ * Constructor por default
+ *
+ * @param
+ * @return Objeto runas_p
+ */
 runas_p::runas_p(){
   runa_1="";
   runa_2="";
@@ -223,6 +229,13 @@ runas_p::runas_p(){
   runa_4="";  
 }
 
+/*
+ * Constructor donde recibe los valores para llenar las variables de instancia
+ *
+ * @param string r1: la primer runa del personaje, string r2: la segunda runa del personaje, 
+ * string r3: la tercera runa del personaje, string r4: la tercera runa del personaje
+ * @return
+ */
 runas_p::runas_p(string r1, string r2, string r3, string r4){
   runa_1=r1;
   runa_2=r2;
@@ -230,45 +243,99 @@ runas_p::runas_p(string r1, string r2, string r3, string r4){
   runa_4=r4;
 }
 
+/*
+ * getter get_runa1
+ *
+ * @param
+ * @return string: la primer runa del personaje
+ */
 string runas_p:: get_runa1(){
   return runa_1;
 }
 
+/*
+ * getter get_runa2
+ *
+ * @param
+ * @return string: la segunda runa del personaje
+ */
 string runas_p:: get_runa2(){
   return runa_2;
 }
 
+/*
+ * getter get_runa3
+ *
+ * @param
+ * @return string: la tercera runa del personaje
+ */
 string runas_p:: get_runa3(){
   return runa_3;
 }
 
+/*
+ * getter get_runa4
+ *
+ * @param
+ * @return string: la cuarta runa del personaje
+ */
 string runas_p:: get_runa4(){
   return runa_4;
 }
 
+/*
+ * setter s_runa1
+ *
+ * @param string r1
+ * @return variable runa_1
+ */
 void runas_p:: s_runa1(string r1){
   runa_1=r1;
 }
 
+/*
+ * setter s_runa2
+ *
+ * @param string r2
+ * @return variable runa_2
+ */
 void runas_p:: s_runa2(string r2){
   runa_2=r2;
 }
 
+/*
+ * setter s_runa3
+ *
+ * @param string r3
+ * @return variable runa_3
+ */
 void runas_p:: s_runa3(string r3){
   runa_3=r3;
 }
 
+/*
+ * setter s_runa4
+ *
+ * @param string r4
+ * @return variable runa_4
+ */
 void runas_p:: s_runa4(string r4){
   runa_4=r4;
 }
 
+//Declaro la clase runas_s que hereda de runas_p
 class runas_s: public runas_p {
   
   private:
+    // Declaro las variables de la clase
     string runas_1;
     string runas_2;
   
   public:
+     // Declaro las variables de la clase
+     /* Declaro los métodos que se utilizarán en la clase
+      * Declaro tanto un constructor default como un constructor con las variables 
+      */
     runas_s();
     runas_s(string, string, string, string, string, string);
     void s_runas1(string);
@@ -278,13 +345,27 @@ class runas_s: public runas_p {
     string to_string2()const;
     
 };
-
+/*
+ * Constructor por default
+ *
+ * @param
+ * @return Objeto runas_s que se heredaron de la clase padre (runas_p)
+ */
 runas_s::runas_s(){
   runa_1="";
   runa_2="";
   runa_3="";
   runa_4="";
 }
+
+/*
+ * Constructor donde recibe los valores para llenar las variables de instancia
+ *
+ * @param string r1: la primer runa del personaje, string r2: la segunda runa del personaje, 
+ * string r3: la tercera runa del personaje, string r4: la tercera runa del personaje, 
+ * string runas_1: la primera runa secundaria, string runas_2: la segunda runa secundaria.
+ * @return
+ */
 runas_s::runas_s(string r1, string r2, string r3,string r4, string r5, string r6){
   runa_1=r1;
   runa_2=r2;
@@ -302,14 +383,32 @@ void runas_s::s_runas2(string r6){
   runas_2=r6;
 }
 
+/*
+ * getter get_runas1
+ *
+ * @param
+ * @return string: la primera runa secundaria del personaje
+ */
 string runas_s:: get_runas1(){
   return runas_1;
 }
 
+/*
+ * getter get_runas2
+ *
+ * @param
+ * @return string: la segunda runa secundaria del personaje
+ */
 string runas_s:: get_runas2(){
   return runas_2;
 }
-
+/*
+ * Almacenda los valores de las variables que se heradaron de la clase padre y los que se crearon en la clase hija
+ * en una cadena texto.
+ *
+ * @param
+ * @return string con los datos de las variables runa_1, runa_2, runa_3, runa_4, runas_1 y runas_2.
+ */
 string runas_s:: to_string2()const{
     stringstream aux;
     aux<<runa_1<<", "<<runa_2<<", "<<runa_3<<" y "<<runa_4<<"y las runas secundarias son: "<<runas_1<<" y "<<runas_2 <<endl;
