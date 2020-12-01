@@ -13,3 +13,6 @@ Las runas principales son: Cometa arcano, Banda de Maná, Trascendencia y Pirola
 1.Se agregaron getters en el documento de caracteristica.h
 
 2.Se agregó los datos en el diagrama de flujo
+
+3.Se agregaron comentarios y se corrigió la sangría de los 3 archivos
+
